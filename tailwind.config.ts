@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: "#0f1f3d",
+        "navy-light": "#162a52",
+        orange: "#FF6B00",
+        "orange-hover": "#e65f00",
+        gray: {
+          50: "#f8f9fa",
+        },
       },
     },
   },
