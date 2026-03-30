@@ -110,7 +110,7 @@ function Nav() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-3">
-            <img src="/sitinel-logo.png" alt="Sitinel" className="h-10 w-10 object-contain" />
+            <img src="/sitinel-icon.svg" alt="Sitinel" className="h-10 w-10 object-contain brightness-0 invert" />
             <span className="text-white text-xl font-bold tracking-tight">SITINEL</span>
           </a>
 
@@ -189,7 +189,7 @@ function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <div className="flex justify-center mb-8">
-          <img src="/sitinel-logo.png" alt="Sitinel" className="h-24 w-24 object-contain" />
+          <img src="/sitinel-icon.svg" alt="Sitinel" className="h-24 w-24 object-contain brightness-0 invert" />
         </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
           Know What&apos;s Happening On Your Site.{" "}
