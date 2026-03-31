@@ -129,15 +129,13 @@ function Nav() {
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-navy overflow-hidden">
-      {/* Grid pattern */}
+      {/* Construction site background photo */}
       <div
-        className="absolute inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/construction-hero.jpg')" }}
       />
+      {/* Dark overlay — navy tint so text stays readable */}
+      <div className="absolute inset-0 bg-navy/80" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <span className="inline-block bg-orange/15 text-orange text-sm font-semibold tracking-wide uppercase px-4 py-1.5 rounded-full mb-8">
