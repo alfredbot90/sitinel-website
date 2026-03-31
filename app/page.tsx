@@ -4,30 +4,6 @@ import { useState } from "react";
 
 /* ─── SVG Icon Components ─── */
 
-function CameraIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-    </svg>
-  );
-}
-
-function CpuIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5M4.5 15.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z" />
-    </svg>
-  );
-}
-
-function BellIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
-    </svg>
-  );
-}
-
 function HelmetIcon() {
   return (
     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -76,30 +52,6 @@ function MicIcon() {
   );
 }
 
-function ShieldIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-    </svg>
-  );
-}
-
-function WifiOffIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3 3l18 18M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12 18h.008v.008H12V18Z" />
-    </svg>
-  );
-}
-
-function LockIcon() {
-  return (
-    <svg className="w-10 h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-    </svg>
-  );
-}
-
 /* ─── Nav ─── */
 
 function Nav() {
@@ -128,7 +80,7 @@ function Nav() {
               href="#pilot"
               className="bg-orange hover:bg-orange-hover text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors"
             >
-              Request a Demo
+              Request a Site Demo
             </a>
           </div>
 
@@ -164,7 +116,7 @@ function Nav() {
             onClick={() => setMobileOpen(false)}
             className="block bg-orange hover:bg-orange-hover text-white text-sm font-semibold px-5 py-2 rounded-lg text-center transition-colors"
           >
-            Request a Demo
+            Request a Site Demo
           </a>
         </div>
       )}
@@ -179,32 +131,33 @@ function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-navy overflow-hidden">
       {/* Grid pattern */}
       <div
-        className="absolute inset-0 opacity-[0.07]"
+        className="absolute inset-0 opacity-[0.05]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)",
+            "linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <div className="flex justify-center mb-10">
-          <img src="/sitinel-icon-white.svg" alt="Sitinel" className="h-40 w-40 object-contain" style={{ filter: "drop-shadow(0 0 24px rgba(255,255,255,0.2))" }} />
-        </div>
+        <span className="inline-block bg-orange/15 text-orange text-sm font-semibold tracking-wide uppercase px-4 py-1.5 rounded-full mb-8">
+          AI-Powered Site Intelligence
+        </span>
+
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
-          Know What&apos;s Happening On Your Site.{" "}
-          <span className="text-orange">Before Something Goes Wrong.</span>
+          Know What&apos;s Happening On Your Job Site&thinsp;&mdash;&thinsp;Without Being There.
         </h1>
-        <p className="mt-6 text-lg sm:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
-          Sitinel monitors your existing cameras with on-premise AI — detecting PPE violations, safety hazards, and
-          site incidents in real time. No video ever leaves your site.
+
+        <p className="mt-6 text-lg sm:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
+          Sitinel deploys rugged edge AI devices on your existing site infrastructure. Real-time safety monitoring, zero cloud dependency, zero video egress.
         </p>
+
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#pilot"
             className="bg-orange hover:bg-orange-hover text-white font-semibold px-8 py-3.5 rounded-lg text-base transition-colors w-full sm:w-auto"
           >
-            Request a Demo
+            Request a Site Demo
           </a>
           <a
             href="#how-it-works"
@@ -212,6 +165,85 @@ function Hero() {
           >
             See How It Works&ensp;&darr;
           </a>
+        </div>
+
+        {/* Trust Stats */}
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 max-w-3xl mx-auto">
+          <div>
+            <p className="text-3xl sm:text-4xl font-bold text-orange">48</p>
+            <p className="text-sm text-white/50 mt-1">PPE violations detected in first week</p>
+          </div>
+          <div>
+            <p className="text-3xl sm:text-4xl font-bold text-orange">0</p>
+            <p className="text-sm text-white/50 mt-1">video data leaves the site</p>
+          </div>
+          <div>
+            <p className="text-3xl sm:text-4xl font-bold text-orange">&lt; 2 hrs</p>
+            <p className="text-sm text-white/50 mt-1">to deploy on any job site</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── Hardware Section ─── */
+
+function Hardware() {
+  const specs = [
+    {
+      title: "Fanless Design",
+      desc: "-20\u00B0C to 60\u00B0C operating range. No moving parts. Built for dust, heat, and cold.",
+    },
+    {
+      title: "PoE Camera Ready",
+      desc: "Connects to your existing IP cameras via standard RTSP. No new hardware required.",
+    },
+    {
+      title: "On-Premise Only",
+      desc: "No video is ever transmitted off-site. Not a frame. Not a byte.",
+    },
+    {
+      title: "2-Hour Deploy",
+      desc: "Mounts to DIN rail, wall, or desk. Power on, connect cameras, done.",
+    },
+  ];
+
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-navy text-center">
+          Built for the Job Site. Not the Office.
+        </h2>
+
+        {/* Device Mockup */}
+        <div className="mt-16 flex justify-center">
+          <div className="relative w-[300px] h-[200px] bg-[#1a1a1a] rounded-lg shadow-2xl border border-white/10 overflow-hidden">
+            {/* Ventilation slots */}
+            <div className="absolute top-4 left-4 right-4 flex flex-col gap-[6px]">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="h-[2px] bg-white/10 rounded-full" />
+              ))}
+            </div>
+            {/* Orange LED indicator */}
+            <div className="absolute bottom-4 right-4 w-3 h-3 rounded-full bg-orange shadow-[0_0_8px_2px_rgba(255,107,0,0.6)]" />
+            {/* Sitinel label */}
+            <div className="absolute bottom-4 left-4 text-[10px] font-bold tracking-[0.2em] text-white/20 uppercase">
+              Sitinel
+            </div>
+            {/* Side accent line */}
+            <div className="absolute top-0 left-0 w-1 h-full bg-orange/80" />
+          </div>
+        </div>
+
+        {/* Specs Grid */}
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {specs.map((s) => (
+            <div key={s.title} className="text-center">
+              <h3 className="text-lg font-semibold text-navy">{s.title}</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-relaxed">{s.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -223,37 +255,31 @@ function Hero() {
 function HowItWorks() {
   const steps = [
     {
-      num: "01",
-      icon: <CameraIcon />,
-      title: "Connects to Your Cameras",
-      desc: "Uses your existing IP cameras. No new camera hardware required for most sites.",
+      num: "1",
+      title: "We Connect to Your Cameras",
+      desc: "Plugs into your existing IP camera infrastructure via standard RTSP. No new cameras required.",
     },
     {
-      num: "02",
-      icon: <CpuIcon />,
-      title: "AI Runs On-Site",
-      desc: "All processing on a dedicated edge device at your site. No cloud. No video upload. Ever.",
+      num: "2",
+      title: "AI Runs On Your Site",
+      desc: "All inference happens on the Sitinel device. Nothing leaves. Not a frame. Not a byte.",
     },
     {
-      num: "03",
-      icon: <BellIcon />,
-      title: "Instant Alerts",
-      desc: "Email or SMS the moment a violation is detected.",
+      num: "3",
+      title: "You Get Instant Alerts",
+      desc: "SMS or email the moment a violation is detected. No dashboards to babysit.",
     },
   ];
 
   return (
-    <section id="how-it-works" className="py-24 bg-white">
+    <section id="how-it-works" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-navy text-center">How It Works</h2>
         <div className="mt-16 grid md:grid-cols-3 gap-12">
           {steps.map((s) => (
             <div key={s.num} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-orange/10 mb-6">
-                {s.icon}
-              </div>
-              <span className="block text-xs font-bold tracking-widest text-orange/60 uppercase mb-2">
-                Step {s.num}
+              <span className="inline-block text-6xl font-black text-orange/20 leading-none mb-4">
+                {s.num}
               </span>
               <h3 className="text-xl font-semibold text-navy">{s.title}</h3>
               <p className="mt-3 text-gray-600 leading-relaxed">{s.desc}</p>
@@ -265,47 +291,75 @@ function HowItWorks() {
   );
 }
 
-/* ─── What We Detect ─── */
+/* ─── What We Catch ─── */
 
-function WhatWeDetect() {
+function WhatWeCatch() {
   const detections = [
-    { icon: <HelmetIcon />, title: "Hard Hat Violations" },
-    { icon: <VestIcon />, title: "Missing Hi-Vis Vest" },
-    { icon: <BarrierIcon />, title: "Unauthorized Zone Entry" },
-    { icon: <WarningIcon />, title: "Slip & Fall Risk" },
-    { icon: <PeopleIcon />, title: "Multi-Worker Monitoring" },
-    { icon: <MicIcon />, title: "Audio Event Detection", comingSoon: true },
+    {
+      icon: <HelmetIcon />,
+      title: "Hard Hat Violations",
+      desc: "Detected in real time across all active camera feeds.",
+    },
+    {
+      icon: <VestIcon />,
+      title: "Missing Hi-Vis Vest",
+      desc: "Flagged before a supervisor needs to intervene.",
+    },
+    {
+      icon: <BarrierIcon />,
+      title: "Unauthorized Zone Entry",
+      desc: "Perimeter breach alerts, instant.",
+    },
+    {
+      icon: <WarningIcon />,
+      title: "Slip & Fall Risk",
+      desc: "Posture and movement pattern detection.",
+    },
+    {
+      icon: <PeopleIcon />,
+      title: "Multi-Worker Monitoring",
+      desc: "Coverage across entire site simultaneously.",
+    },
+    {
+      icon: <MicIcon />,
+      title: "Audio Events",
+      desc: "Distress signals, alarms, unusual sounds.",
+      comingSoon: true,
+    },
   ];
 
   return (
-    <section id="detect" className="py-24 bg-gray-50">
+    <section id="detect" className="py-24 bg-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-navy text-center">What We Detect</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center">What Sitinel Catches</h2>
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {detections.map((d) => (
             <div
               key={d.title}
-              className={`relative bg-white rounded-xl border p-6 transition-shadow ${
+              className={`relative rounded-xl border p-6 transition-all ${
                 d.comingSoon
-                  ? "border-gray-200 opacity-60"
-                  : "border-gray-200 hover:shadow-lg hover:border-orange/30"
+                  ? "border-white/10 opacity-40"
+                  : "border-white/10 hover:border-orange/40 bg-white/5"
               }`}
             >
               {d.comingSoon && (
-                <span className="absolute top-4 right-4 bg-gray-200 text-gray-500 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">
+                <span className="absolute top-4 right-4 bg-white/10 text-white/40 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">
                   Coming Soon
                 </span>
               )}
               <div
                 className={`inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4 ${
-                  d.comingSoon ? "bg-gray-100 text-gray-400" : "bg-orange/10 text-orange"
+                  d.comingSoon ? "bg-white/5 text-white/30" : "bg-orange/15 text-orange"
                 }`}
               >
                 {d.icon}
               </div>
-              <h3 className={`text-lg font-semibold ${d.comingSoon ? "text-gray-400" : "text-navy"}`}>
+              <h3 className={`text-lg font-semibold ${d.comingSoon ? "text-white/30" : "text-white"}`}>
                 {d.title}
               </h3>
+              <p className={`mt-2 text-sm leading-relaxed ${d.comingSoon ? "text-white/20" : "text-white/50"}`}>
+                {d.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -319,36 +373,30 @@ function WhatWeDetect() {
 function WhyOnPremise() {
   const features = [
     {
-      icon: <ShieldIcon />,
-      title: "Zero Video Egress",
-      desc: "No footage ever leaves your site. Not stored in the cloud. Not transmitted anywhere.",
+      title: "Zero Egress",
+      desc: "No footage, no frames, no metadata leaves your network. Ever.",
     },
     {
-      icon: <WifiOffIcon />,
       title: "Works Offline",
-      desc: "Full functionality with no internet connection. Your site, your network, your rules.",
+      desc: "Full functionality with no internet. Your site runs on your terms.",
     },
     {
-      icon: <LockIcon />,
       title: "Privacy Compliant",
-      desc: "Meets the strictest on-site privacy and security policies.",
+      desc: "Meets the strictest GC security and insurance requirements.",
     },
   ];
 
   return (
-    <section className="py-24 bg-navy">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center">
-          Your Site. Your Data. Your Control.
+        <h2 className="text-3xl sm:text-4xl font-bold text-navy text-center">
+          Your Site. Your Data. Full Stop.
         </h2>
         <div className="mt-16 grid md:grid-cols-3 gap-10">
           {features.map((f) => (
             <div key={f.title} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 mb-6">
-                {f.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white">{f.title}</h3>
-              <p className="mt-3 text-white/60 leading-relaxed">{f.desc}</p>
+              <h3 className="text-xl font-semibold text-navy">{f.title}</h3>
+              <p className="mt-3 text-gray-600 leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
@@ -390,19 +438,24 @@ function PilotProgram() {
     }
   }
 
+  const inputClasses =
+    "w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-white/30 focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors";
+
   return (
-    <section id="pilot" className="py-24 bg-white">
+    <section id="pilot" className="py-24 bg-navy">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-navy text-center">Be One of Our First Sites</h2>
-        <p className="mt-4 text-gray-600 text-center leading-relaxed max-w-xl mx-auto">
-          We&apos;re running a limited pilot with general contractors. Pilot sites get priority onboarding and direct
-          access to our engineering team.
+        <span className="block text-center text-orange text-sm font-semibold tracking-wide uppercase mb-4">
+          Limited Availability
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center">Be One of Our First Sites</h2>
+        <p className="mt-4 text-white/50 text-center leading-relaxed max-w-xl mx-auto">
+          We&apos;re deploying with a small number of general contractors this quarter. Pilot sites get white-glove onboarding, direct engineering access, and locked-in founder pricing.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-12 space-y-5">
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-navy mb-1.5">
+              <label htmlFor="firstName" className="block text-sm font-medium text-white/70 mb-1.5">
                 First Name <span className="text-orange">*</span>
               </label>
               <input
@@ -410,11 +463,11 @@ function PilotProgram() {
                 id="firstName"
                 name="firstName"
                 required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors"
+                className={inputClasses}
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-navy mb-1.5">
+              <label htmlFor="lastName" className="block text-sm font-medium text-white/70 mb-1.5">
                 Last Name <span className="text-orange">*</span>
               </label>
               <input
@@ -422,13 +475,13 @@ function PilotProgram() {
                 id="lastName"
                 name="lastName"
                 required
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors"
+                className={inputClasses}
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-navy mb-1.5">
+            <label htmlFor="company" className="block text-sm font-medium text-white/70 mb-1.5">
               Company <span className="text-orange">*</span>
             </label>
             <input
@@ -436,12 +489,12 @@ function PilotProgram() {
               id="company"
               name="company"
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors"
+              className={inputClasses}
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-navy mb-1.5">
+            <label htmlFor="email" className="block text-sm font-medium text-white/70 mb-1.5">
               Email <span className="text-orange">*</span>
             </label>
             <input
@@ -449,31 +502,31 @@ function PilotProgram() {
               id="email"
               name="email"
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors"
+              className={inputClasses}
             />
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-navy mb-1.5">
-              Phone <span className="text-gray-400">(optional)</span>
+            <label htmlFor="phone" className="block text-sm font-medium text-white/70 mb-1.5">
+              Phone <span className="text-white/30">(optional)</span>
             </label>
             <input
               type="tel"
               id="phone"
               name="phone"
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors"
+              className={inputClasses}
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-navy mb-1.5">
-              Message <span className="text-gray-400">(optional)</span>
+            <label htmlFor="message" className="block text-sm font-medium text-white/70 mb-1.5">
+              Message <span className="text-white/30">(optional)</span>
             </label>
             <textarea
               id="message"
               name="message"
               rows={4}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-orange focus:ring-1 focus:ring-orange outline-none transition-colors resize-none"
+              className={`${inputClasses} resize-none`}
             />
           </div>
 
@@ -482,16 +535,18 @@ function PilotProgram() {
             disabled={status === "sending"}
             className="w-full bg-orange hover:bg-orange-hover disabled:opacity-50 text-white font-semibold py-3 rounded-lg text-base transition-colors"
           >
-            {status === "sending" ? "Sending..." : "Submit"}
+            {status === "sending" ? "Sending..." : "Request a Site Demo"}
           </button>
 
+          <p className="text-white/30 text-xs text-center">We respond within 24 hours.</p>
+
           {status === "sent" && (
-            <p className="text-green-600 text-sm text-center font-medium">
+            <p className="text-green-400 text-sm text-center font-medium">
               Thanks! We&apos;ll be in touch shortly.
             </p>
           )}
           {status === "error" && (
-            <p className="text-red-600 text-sm text-center font-medium">
+            <p className="text-red-400 text-sm text-center font-medium">
               Something went wrong. Please try again or email us directly.
             </p>
           )}
@@ -507,17 +562,16 @@ function Footer() {
   return (
     <footer className="bg-navy border-t border-white/10 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-white font-bold text-lg">Sitinel</p>
-        <p className="text-white/50 text-sm mt-1">AI Safety, On Your Site.</p>
-        <div className="mt-4 flex items-center justify-center gap-4 text-white/40 text-xs">
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <img src="/sitinel-icon-white.svg" alt="Sitinel" className="h-8 w-8 object-contain" />
+          <span className="text-white font-bold text-lg tracking-tight">SITINEL</span>
+        </div>
+        <p className="text-white/40 text-sm">Field Intelligence. On Your Site.</p>
+        <div className="mt-4 flex items-center justify-center gap-4 text-white/30 text-xs">
           <span>&copy; 2026 Sitinel Technologies Inc.</span>
           <span>&middot;</span>
-          <a href="https://sitinel.ca" className="hover:text-white/60 transition-colors">
+          <a href="https://sitinel.ca" className="hover:text-white/50 transition-colors">
             sitinel.ca
-          </a>
-          <span>&middot;</span>
-          <a href="/privacy" className="hover:text-white/60 transition-colors">
-            Privacy Policy
           </a>
         </div>
       </div>
@@ -532,8 +586,9 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <Hardware />
       <HowItWorks />
-      <WhatWeDetect />
+      <WhatWeCatch />
       <WhyOnPremise />
       <PilotProgram />
       <Footer />
